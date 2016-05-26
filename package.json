@@ -1,0 +1,32 @@
+{
+  "name": "creative-europe-angular",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VeskeR/creative-europe-angular.git"
+  },
+  "author": "Andrey Bulat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VeskeR/creative-europe-angular/issues"
+  },
+  "homepage": "https://github.com/VeskeR/creative-europe-angular#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "bower": "^1.7.7",
+    "cssnano": "^3.5.2",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-connect": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-processhtml": "^0.3.13",
+    "grunt-sass": "^1.1.0",
+    "grunt-wiredep": "^2.0.0",
+    "load-grunt-tasks": "^3.4.1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "creative-europe-angular",
+  "version": "0.0.0",
+  "authors": [
+    "Andrey Bulat <andrii.bulat@gmail.com>"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "angular": "1.5.0",
+    "angular-bootstrap": "^1.2.4",
+    "angular-route": "^1.5.0",
+    "angular-resource": "^1.5.0",
+    "angular-animate": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
+    "angular-translate": "^2.10.0",
+    "angular-translate-loader-static-files": "^2.10.0",
+    "angular-sanitize": "^1.5.0"
+  }
+}
