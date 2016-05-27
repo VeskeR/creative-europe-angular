@@ -1,0 +1,65 @@
+// Common Colors
+$white: #fff;
+$gray-97: hsl(0, 0%, 97%);
+$gray-94: hsl(0, 0%, 94%);
+$gray-90: hsl(0, 0%, 90%);
+$gray-87: hsl(0, 0%, 87%);
+$gray-84: hsl(0, 0%, 84%);
+$gray-80: hsl(0, 0%, 80%);
+$gray-77: hsl(0, 0%, 77%);
+$gray-74: hsl(0, 0%, 74%);
+$gray-70: hsl(0, 0%, 70%);
+$gray-67: hsl(0, 0%, 67%);
+$gray-64: hsl(0, 0%, 64%);
+$gray-60: hsl(0, 0%, 60%);
+$gray-57: hsl(0, 0%, 57%);
+$gray-54: hsl(0, 0%, 54%);
+$gray-50: hsl(0, 0%, 50%);
+$black: #000;
+
+$blue-300: #64B5F6;
+$blue-400: #42A5F5;
+$blue-500: #2196F3;
+$blue-600: #1E88E5;
+$blue-700: #1976D2;
+$blue-800: #1565C0;
+$blue-900: #0D47A1;
+
+$teal-300: #4DB6AC;
+$teal-400: #26A69A;
+$teal-500: #009688;
+$teal-600: #00897B;
+$teal-900: #004D40;
+
+$shadow-color: rgba($black, 0.3);
+
+// Project sizes
+$wrapper-margin: 5%;
+$header-height: 80px;
+$footer-height: 60px;
+$nav-width: 300px;
+$nav-left: $wrapper-margin;
+
+// Project colors
+$clouds: #ecf0f1;
+$silver: #bdc3c7;
+$light-grey: #eff1ec;
+$grey: #7f8c8d;
+$red: #e74c3c;
+$bleed-blue: #eafbfb;
+$light-blue: #3498db;
+$dark-blue: #004494;
+
+// Material shadows
+$material-shadow-1: 0px 1px 4px $shadow-color;
+$material-shadow-2: 0px 3px 8px $shadow-color;
+$material-shadow-3: 0px 5px 12px $shadow-color;
+$material-shadow-4: 0px 7px 16px $shadow-color;
+$material-shadow-5: 0px 9px 20px $shadow-color;
+$material-shadow-6: 0px 11px 24px $shadow-color;
+$material-ambient-shadow-1: 0px 0px 20px -5px $shadow-color;
+$material-ambient-shadow-2: 0px 0px 28px -7px $shadow-color;
+$material-ambient-shadow-3: 0px 0px 36px -9px $shadow-color;
+$material-ambient-shadow-4: 0px 0px 44px -11px $shadow-color;
+$material-ambient-shadow-5: 0px 0px 52px -13px $shadow-color;
+$material-ambient-shadow-6: 0px 0px 60px -15px $shadow-color;

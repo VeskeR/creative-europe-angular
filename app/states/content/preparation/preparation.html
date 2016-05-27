@@ -1,0 +1,15 @@
+<div data-state="app.content.preparation">
+  <div class="app-content-preparation">
+    <div ng-switch="currentPage">
+      <div ng-switch-when="1">
+        <ng-include src="'states/content/preparation/preparation.1.html'"></ng-include>
+      </div>
+      <div ng-switch-when="2">
+        <ng-include src="'states/content/preparation/preparation.2.html'"></ng-include>
+      </div>
+      <div ng-switch-when="3">
+        <ng-include src="'states/content/preparation/preparation.3.html'"></ng-include>
+      </div>
+    </div>
+  </div>
+</div>

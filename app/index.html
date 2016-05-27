@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="CreativeEuropeApp" lang="">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>{{ 'CREATIVE_EUROPE' | translate }}</title>
+
+  <!-- build:css styles/vendor/bower.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- /build -->
+
+  <!-- build:css styles/main.min.css -->
+  <link rel="stylesheet" href="/.tmp/styles/main.css">
+  <!-- /build -->
+</head>
+<body>
+  <ui-view></ui-view>
+
+  <!-- build:js scripts/vendor/bower.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="/bower_components/angular-translate/angular-translate.js"></script>
+  <script src="/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+  <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <!-- endbower -->
+  <!-- /build -->
+
+  <!-- build:js scripts/main.min.js -->
+  <script src="/app/scripts/main.js"></script>
+
+  <script src="/app/scripts/configs/translate.js"></script>
+  <script src="/app/scripts/configs/urlRouter.js"></script>
+
+  <script src="/app/states/app.js"></script>
+  <script src="/app/states/content/content.js"></script>
+  <script src="/app/states/content/about/about.js"></script>
+  <script src="/app/states/content/culture/culture.js"></script>
+  <script src="/app/states/content/homepage/homepage.js"></script>
+  <script src="/app/states/content/preparation/preparation.js"></script>
+  <!-- /build -->
+</body>
+</html>

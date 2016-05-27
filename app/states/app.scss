@@ -1,0 +1,98 @@
+[data-state='app'] {
+  .app {
+    .wrapper {
+      &__image {
+        z-index: -999;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0.4;
+      }
+
+      .header {
+        background-color: $light-blue;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: $header-height;
+        z-index: 999;
+
+        &--text {
+          color: $clouds;
+          font-size: 2.5rem;
+          line-height: 2.5rem;
+          margin-left: 3rem;
+        }
+      }
+
+      .nav {
+        background-color: $light-blue;
+        position: fixed;
+        left: $nav-left;
+        top: $header-height;
+        bottom: $footer-height;
+        width: $nav-width;
+        margin: 1rem 0;
+        z-index: 999;
+
+        .list {
+          list-style: none;
+
+          &__item {
+            padding: .5rem 1rem 0 1rem;
+            font-size: 1.2rem;
+            line-height: 3rem;
+            border-bottom: 2px solid $dark-blue;
+
+            &--link {
+              text-decoration: none;
+              color: $silver;
+              
+              &:hover {
+                color: $clouds;
+                cursor: pointer;
+              }
+
+              &.selected {
+                color: $clouds;
+              }
+            }
+          }
+        }
+      }
+
+      .main {
+        margin-top: $header-height;
+        margin-right: $wrapper-margin;
+        margin-bottom: $footer-height;
+        margin-left: calc(5% + 300px);
+
+        .content {
+          padding: 1rem 1rem 1rem 2rem;
+        }
+      }
+
+      .footer {
+        background-color: $light-blue;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: $footer-height;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &--text {
+          color: $clouds;
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@import 'content/content';
