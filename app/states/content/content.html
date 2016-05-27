@@ -1,33 +1,9 @@
 <div data-state="app.content">
   <div class="app-content">
-    <div class="content__navigation content__navigation--top">
-      <div class="icon icon--left">
-        <img src="../images/glyphicons/png/glyphicons-225-chevron-left.png" alt="Prev page" />
-      </div>
-      <div class="pages">
-        <p>
-          {{ currentPage }} / {{ pageCount }}
-        </p>
-      </div>
-      <div class="icon icon--right">
-        <img src="../images/glyphicons/png/glyphicons-224-chevron-right.png" alt="Prev page" />
-      </div>
-    </div>
-    <div class="content__container">
+    <div class="navigation navigation--top" ng-include="'states/content/content.navigation.html'"></div>
+    <div class="container">
       <ui-view></ui-view>
     </div>
-    <div class="content__navigation content__navigation--bottom">
-      <div class="icon icon--left">
-        <img src="../images/glyphicons/png/glyphicons-225-chevron-left.png" alt="Prev page" />
-      </div>
-      <div class="pages">
-        <p>
-          {{ currentPage }} / {{ pageCount }}
-        </p>
-      </div>
-      <div class="icon icon--right">
-        <img src="../images/glyphicons/png/glyphicons-224-chevron-right.png" alt="Prev page" />
-      </div>
-    </div>
+    <div class="navigation navigation--bottom" ng-include="'states/content/content.navigation.html'"></div>
   </div>
 </div>

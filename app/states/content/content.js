@@ -12,7 +12,15 @@ angular.module('CreativeEuropeApp')
         };
         $scope.setPageCount = function (pageCount) {
           $scope.pageCount = pageCount;
-        }
+        };
+        $scope.nextPage = function () {
+          console.log('next');
+          $scope.currentPage = $scope.currentPage < $scope.pageCount ? $scope.currentPage + 1 : $scope.currentPage;
+        };
+        $scope.prevPage = function () {
+          console.log('prev');
+          $scope.currentPage = $scope.currentPage > 1 ? $scope.currentPage - 1 : $scope.currentPage;
+        };
       }]
     });
   }]);

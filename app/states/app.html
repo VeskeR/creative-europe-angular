@@ -9,10 +9,18 @@
 
       <nav class="nav">
         <ul class="list">
-          <li class="list--item" data-page='home'>Домашня сторінка</li>
-          <li class="list--item" data-page='about'>Про програму</li>
-          <li class="list--item" data-page='culture'>Підпрограма «Культура»</li>
-          <li class="list--item" data-page='preparation'>Підготовка до проекту</li>
+          <li class="list__item" data-page='home'>
+            <a ui-sref="app.content.homepage" class="list__item--link">Домашня сторінка</a>
+          </li>
+          <li class="list__item" data-page='about'>
+            <a ui-sref="app.content.about" class="list__item--link">Про програму</a>
+          </li>
+          <li class="list__item" data-page='culture'>
+            <a ui-sref="app.content.culture" class="list__item--link">Підпрограма «Культура»</a>
+          </li>
+          <li class="list__item" data-page='preparation'>
+            <a ui-sref="app.content.preparation" class="list__item--link">Підготовка до проекту</a>
+          </li>
         </ul>
       </nav>
 

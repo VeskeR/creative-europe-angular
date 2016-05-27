@@ -4,7 +4,7 @@ angular.module('CreativeEuropeApp')
       prefix: '/app/i18n/',
       suffix: '.json'
     });
-    $translateProvider.preferredLanguage('en');
+    $translateProvider.preferredLanguage('ua');
     // Uncomment on deploy. Need fix for russian, ukrainian languages
     // $translateProvider.useSanitizeValueStrategy('sanitize');
   }]);
