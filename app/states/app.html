@@ -4,22 +4,22 @@
       <img src="images/app/background1.jpg" class="wrapper__image">
 
       <header class="header">
-        <h1 class="header--text">Креативна Європа</h1>
+        <h1 class="header--text">{{ 'CREATIVE_EUROPE' | translate }}</h1>
       </header>
 
       <nav class="nav">
         <ul class="list">
           <li class="list__item" data-page='home'>
-            <a ui-sref="app.content.homepage" class="list__item--link">Домашня сторінка</a>
+            <a ui-sref="app.content.homepage" class="list__item--link">{{ 'HOMEPAGE' | translate }}</a>
           </li>
           <li class="list__item" data-page='about'>
-            <a ui-sref="app.content.about" class="list__item--link">Про програму</a>
+            <a ui-sref="app.content.about" class="list__item--link">{{ 'ABOUT_PROGRAM' | translate }}</a>
           </li>
           <li class="list__item" data-page='culture'>
-            <a ui-sref="app.content.culture" class="list__item--link">Підпрограма «Культура»</a>
+            <a ui-sref="app.content.culture" class="list__item--link">{{ 'CULTURE' | translate }}</a>
           </li>
           <li class="list__item" data-page='preparation'>
-            <a ui-sref="app.content.preparation" class="list__item--link">Підготовка до проекту</a>
+            <a ui-sref="app.content.preparation" class="list__item--link">{{ 'PROJECT_PREPARATION' | translate }}</a>
           </li>
         </ul>
       </nav>
@@ -32,7 +32,7 @@
 
       <footer class="footer">
         <p class="footer--text">
-          Copyright (c) 2016 Copyright Andrey Bulat All Rights Reserved.
+          {{ 'COPYRIGHT' | translate }}
         </p>
       </footer>
     </div>
