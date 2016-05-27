@@ -4,7 +4,7 @@ angular.module('CreativeEuropeApp')
       url: '/culture',
       templateUrl: 'states/content/culture/culture.html',
       controller: ['$scope', function ($scope) {
-
+        $scope.setPageCount(2);
       }]
     });
   }]);

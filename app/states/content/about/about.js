@@ -4,7 +4,7 @@ angular.module('CreativeEuropeApp')
       url: '/about',
       templateUrl: 'states/content/about/about.html',
       controller: ['$scope', function ($scope) {
-
+        $scope.setPageCount(3);
       }]
     });
   }]);

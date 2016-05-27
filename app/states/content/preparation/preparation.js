@@ -4,7 +4,7 @@ angular.module('CreativeEuropeApp')
       url: '/preparation',
       templateUrl: 'states/content/preparation/preparation.html',
       controller: ['$scope', function ($scope) {
-
+        $scope.setPageCount(3);
       }]
     });
   }]);

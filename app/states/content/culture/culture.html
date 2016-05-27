@@ -1,5 +1,12 @@
 <div data-state="app.content.culture">
   <div class="app-content-culture">
-
+    <div ng-switch="currentPage">
+      <div ng-switch-when="1">
+        <ng-include src="'states/content/culture/culture.1.html'"></ng-include>
+      </div>
+      <div ng-switch-when="2">
+        <ng-include src="'states/content/culture/culture.2.html'"></ng-include>
+      </div>
+    </div>
   </div>
 </div>
