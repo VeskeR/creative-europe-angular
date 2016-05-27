@@ -12,6 +12,25 @@ module.exports = function (grunt) {
         src: ['dist/']
       }
     },
+    concat: {
+      options: {
+        separator: ';'
+      },
+      dist: {
+        files: {
+          'dist/scripts/main.js': ['app/scripts/**/*.js', 'app/states/**/*.js'],
+          'dist/scripts/vendor/bower.js': [
+            'bower_components/jquery/dist/jquery.min.js',
+            'bower_components/angular/angular.min.js',
+            'bower_components/angular-ui-router/release/angular-ui-router.min.js',
+            'bower_components/angular-translate/angular-translate.min.js',
+            'bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js',
+            'bower_components/angular-sanitize/angular-sanitize.min.js'
+          ],
+          'dist/styles/vendor/bower.css': []
+        }
+      }
+    },
     connect: {
       options: {
         port: 9000,
@@ -47,7 +66,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'app',
-          src: '**/*.json',
+          src: '**/*.{jpg,png,svg,gif,json}',
           dest: 'dist'
         }]
       }
@@ -108,7 +127,8 @@ module.exports = function (grunt) {
     uglify: {
       dist: {
         files: {
-          'dist/scripts/main.min.js': ['dist/scripts/main.js']
+          'dist/scripts/main.min.js': ['dist/scripts/main.js'],
+          'dist/scripts/vendor/bower.min.js': ['dist/scripts/vendor/bower.js']
         }
       }
     },
@@ -120,12 +140,6 @@ module.exports = function (grunt) {
         files: ['bower.json'],
         tasks: [
           'wiredep'
-        ]
-      },
-      js: {
-        files: ['app/**/*.js'],
-        tasks: [
-
         ]
       },
       sass: {
@@ -142,7 +156,7 @@ module.exports = function (grunt) {
         },
         files: [
           '.tmp/**/*.{js,css,html,jpg,png,svg,gif,json}',
-          'app/**/*.html'
+          'app/**/*.{js,html,jpg,png,svg,gif,json}'
         ]
       }
     },
@@ -166,6 +180,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean',
+    'concat:dist',
     'sass:dist',
     'uglify:dist',
     'postcss:dist',
