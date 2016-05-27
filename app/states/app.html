@@ -1,6 +1,32 @@
 <div data-state="app">
   <div class="app">
-    <p>app</p>
-    <ui-view></ui-view>
+    <div class="wrapper">
+      <img src="images/app/background1.jpg" class="wrapper__image">
+
+      <header class="header">
+        <h1 class="header--text">Креативна Європа</h1>
+      </header>
+
+      <nav class="nav">
+        <ul class="list">
+          <li class="list--item" data-page='home'>Домашня сторінка</li>
+          <li class="list--item" data-page='about'>Про програму</li>
+          <li class="list--item" data-page='culture'>Підпрограма «Культура»</li>
+          <li class="list--item" data-page='preparation'>Підготовка до проекту</li>
+        </ul>
+      </nav>
+
+      <div class="main">
+        <div class="content">
+          <ui-view></ui-view>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p class="footer--text">
+          Copyright (c) 2016 Copyright Andrey Bulat All Rights Reserved.
+        </p>
+      </footer>
+    </div>
   </div>
 </div>

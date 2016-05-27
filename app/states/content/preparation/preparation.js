@@ -1,8 +1,8 @@
 angular.module('CreativeEuropeApp')
   .config(['$stateProvider', function ($stateProvider) {
-    $stateProvider.state('app.public', {
-      abstract: true,
-      templateUrl: 'states/public/public.html',
+    $stateProvider.state('app.content.preparation', {
+      url: '/preparation',
+      templateUrl: 'states/content/preparation/preparation.html',
       controller: ['$scope', function ($scope) {
 
       }]

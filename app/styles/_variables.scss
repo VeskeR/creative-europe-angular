@@ -33,6 +33,23 @@ $teal-900: #004D40;
 
 $shadow-color: rgba($black, 0.3);
 
+// Project sizes
+$wrapper-margin: 5%;
+$header-height: 80px;
+$footer-height: 60px;
+$nav-width: 300px;
+$nav-left: $wrapper-margin;
+
+// Project colors
+$clouds: #ecf0f1;
+$silver: #bdc3c7;
+$light-grey: #eff1ec;
+$grey: #7f8c8d;
+$red: #e74c3c;
+$bleed-blue: #eafbfb;
+$light-blue: #3498db;
+$dark-blue: #004494;
+
 // Material shadows
 $material-shadow-1: 0px 1px 4px $shadow-color;
 $material-shadow-2: 0px 3px 8px $shadow-color;
